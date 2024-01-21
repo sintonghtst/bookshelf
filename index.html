@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps @sintonghtst</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header-header">
+        <h1>Bookshelf Apps @sintonghtst</h1>
+    </header>
+
+    <main>
+        <section class="box-1">
+            <div class="section-input">
+                <h2>Masukkan Buku Baru</h2>
+                <form id="input-buku">
+                    <div class="input">
+                        <label for="input-judul-buku">Judul</label>
+                        <input id="input-judul-buku" type="text" placeholder="Masukkan judul buku">
+                    </div>
+                    <div class="input">
+                        <label for="input-penulis-buku">Penulis</label>
+                        <input id="input-penulis-buku" type="text" placeholder="Masukkan nama penulis buku">
+                    </div>
+                    <div class="input">
+                        <label for="input-tahun-buku">Tahun Terbit</label>
+                        <input id="input-tahun-buku" type="number" placeholder="Masukkan tahun terbit buku">
+                    </div>
+                    <div class="input-selesai-baca">
+                        <label for="input-buku-isComplete">Selesai dibaca</label>
+                        <input id="input-buku-isComplete" type="checkbox">
+                    </div>
+                    <button id="submit" type="submit">Simpan Buku</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="box-2">
+            <div class="section-cari-buku">
+                <h3>Cari buku</h3>
+                <a>Anda bisa mencari buku hanya dengan memasukkan beberapa kriteria saja</a>
+                <form id="cari-buku">
+                    <div class="input-cari">
+                        <label for="cari-judul-buku">Judul</label>
+                        <input id="cari-judul-buku" type="text" placeholder="Masukkan judul buku yang dicari">
+                    </div>
+                    <div class="input-cari">
+                        <label for="cari-penulis-buku">Penulis</label>
+                        <input id="cari-penulis-buku" type="text" placeholder="Masukkan penulis buku yang dicari">
+                    </div>
+                    <div class="input-cari">
+                        <label for="cari-tahun-buku">Tahun Terbit</label>
+                        <input id="cari-tahun-buku" type="number" placeholder="Masukkan tahun terbit buku yang dicari">
+                    </div>
+                    <button id="submit-cari" type="submit">Cari</button>
+                </form>
+
+            </div>
+            <div class="box-2a">
+                <div class="book-shelf">
+                    <h2>Belum selesai dibaca</h2>
+                    <div id="inCompletedBookshelfList" class="list-buku">
+
+                    </div>
+                </div>
+                <div class="book-shelf">
+                    <h2>Sudah selesai dibaca</h2>
+                    <div id="CompletedBookshelfList" class="list-buku">
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="javascript.js" type="text/javascript"></script>
+</body>
+
+</html>

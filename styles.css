@@ -1,0 +1,204 @@
+*{
+    padding: 1;
+    margin: 1;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    padding: 1px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkslategray;
+    color: blanchedalmond;
+    margin-bottom: 5px;
+    cursor: default;
+}
+
+main {
+    font-size: 14px;
+    padding: 10px;
+    display: flex;
+    gap: 1rem;
+}
+.box-1{
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.box-2{
+    flex: 3;
+}
+.section-input{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 3px solid darkslategray;
+    border-radius: 20px;
+    justify-content: left;
+}
+.section-input > h2{
+    text-align: center;
+    color: darkslategray;
+    cursor: default;
+}
+.section-input > form > .input{
+    margin: 8px 0;
+}
+.section-input > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.section-input > form > .input > label {
+    color: black;
+    font-weight: bold;
+}
+.section-input > form > .input-selesai-baca {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+.section-input > form > .input-selesai-baca > label {
+    color: darkslategray;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.section-input > form > button {
+    background-color: darkslategray;
+    color: blanchedalmond;
+    border: 0;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+.section-input > form > button > span {
+    font-weight: bold;
+}
+
+
+.section-cari-buku{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 3px solid darkslategray;
+    border-radius: 20px;
+    justify-content: left;
+    margin-bottom: 15px;
+}
+.section-cari-buku > h3 {
+    color: darkslategray;
+    margin-top: 1px ;
+    cursor: default;
+}
+.section-cari-buku > a{
+    margin-top: -10px;
+    color: rgba(131, 121, 105, 0.61);
+    cursor: default;
+}
+.section-cari-buku > form > .input-cari > label {
+    color: black;
+    font-weight: bold;
+}
+.section-cari-buku > form > .input-cari > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.section-cari-buku > form {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.section-cari-buku > form > button {
+    background-color: darkslategray;
+    color: blanchedalmond;
+    border: 0;
+    border-radius: 10px;
+    display: block;
+    width: 20%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.box-2a{
+    display: flex;
+    gap: 15px;
+}
+.book-shelf {
+    width: 100%;
+    margin: 1px;
+    border: 3px solid darkslategray;
+    padding: 10px;
+    border-radius: 20px;
+}
+.book-shelf > h2 {
+    margin: 1px;
+    color: darkslategray;
+    text-align: center;
+    cursor: default;
+}
+.book-shelf > .list-buku {
+    padding: 5px;
+}
+.book-shelf > .list-buku > .buku {
+    padding: 8px 16px 16px 16px;
+    border: 1px solid darkslategray;
+    border-radius: 20px;
+    margin: 10px 0;
+    transition: transform 0.3s ease-in-out;
+}
+.book-shelf > .list-buku > .buku:hover {
+    background-color: rgb(243, 243, 243);
+    transform: translateY(-5px);
+}
+
+.book-shelf > .list-buku > .buku > h3, p {
+    margin: 8px 0;
+}
+.statusSudahBaca {
+    padding: 3px;
+    background-color: darkgreen;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.statusBelumBaca{
+    padding: 3px;
+    background-color: darkred;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.edit {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: url('assets/edit-icon.svg');
+    background-size: contain;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.delete {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: url('assets/delete-icon.svg');
+    background-size: contain;
+    margin-left: 5px;
+    cursor: pointer;
+}
